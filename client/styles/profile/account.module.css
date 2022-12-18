@@ -1,0 +1,218 @@
+.full{
+    display: flex;
+    min-height: 480px;
+    flex-direction: column;
+    position: relative;
+}
+
+.right,.left{
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+} 
+
+.right{
+    width: 100%;
+    padding-right: 0px;
+    margin: 50px 0px;
+}
+
+.username{
+    position: relative;
+}
+
+.image{
+    height: 260px;
+    width: 260px;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+.politic{
+    margin-top: 10px;
+}
+
+.image input{
+    display: none;
+}
+
+.accountName{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 4px ;
+}
+
+.username h1,.username input{
+    border: 2px solid var(--purple);
+    /* color: var(--purple); */
+    border-radius: 200px;
+    padding: 0px 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    height: 40px;
+    width: 220px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.username h1{
+    background-color: white;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.username h1:hover{
+    background-color:hsl(265, 65%, 95%);
+}
+
+.bio{
+    position: relative;
+}
+
+.bio>div{
+    margin-bottom: 0;
+}
+
+.bioEdit{
+    position: absolute;
+    top: 4px;
+    right: 50px;
+}
+
+.bio textarea,.bio{
+    width: 100%;
+    resize: none;
+}
+
+.bio p,.bio textarea{
+    border: 2px solid var(--purple);
+    font-size: 2rem;
+    /* color: var(--purple); */
+    font-weight: 700;
+    word-wrap: break-all;
+    border-radius: 10px;
+    padding: 10px;
+    min-height: 180px;
+}
+
+.bio p{
+    cursor: pointer;
+    transition: .2s;
+}
+
+.bio p:hover{
+    background-color:hsl(265, 65%, 95%);
+}
+
+.bio h1{
+    font-size: 3rem;
+    /* color: var(--purple); */
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.right h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    /* color: var(--purple); */
+}
+
+.can,.cant{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius:15px ;
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.can{
+    border: 2px solid var(--purple);
+    color: var(--purple);
+    cursor: pointer;
+}
+
+.can:hover{
+    background-color: hsl(265, 65%, 95%);
+}
+
+.can:active{
+    background-color: hsl(265, 75%, 90%);
+}
+
+.cant{
+    border: 2px solid var(--grey);
+    color: var(--grey);
+}
+
+.heart{
+    display: flex;
+    position: absolute;
+    top: -16px;
+    right: -40px;
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    background-color: white;
+    padding: 4px 10px;
+}
+
+.heart h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 4px;
+}
+
+.error,.succ{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -12px;
+}
+
+.error{
+    background-color:hsl(0, 30%, 85%) ;
+    color: hsl(0, 80%, 35%);
+    border: 2px solid hsl(0, 80%, 35%);
+}
+
+.succ{
+    background-color:hsl(115, 30%, 85%) ;
+    color: hsl(115, 80%, 35%);
+    border: 2px solid hsl(115, 80%, 35%);
+}
+
+
+@media only screen and (min-width:800px){
+    .username h1,.username input{
+        font-size: 2rem;
+        width: 320px;
+    }
+    .full{
+        flex-direction: row;
+    }
+    .right{
+        width: 40%;
+    }
+    .left{
+        width: 60%;
+        margin-top: 0;
+    }
+    .can,.cant{
+        font-size: 3rem;
+    }
+}

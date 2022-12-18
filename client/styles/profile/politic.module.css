@@ -1,0 +1,82 @@
+.politic{
+    display: flex;
+  user-select: none;
+}
+
+.politic div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 4px;
+    position: relative;
+}
+
+.politic div::after{
+    position: absolute;
+    top: 56px;
+    right: -30px;
+    font-size: 1rem;
+    width: 40px;
+    font-weight: 900;
+    opacity: 0;
+    transition: .1s;
+    text-align: center;
+    background-color: grey;
+    color: var(--grey);
+    width: 100px;
+    padding: 2px;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    pointer-events: none;
+
+}
+
+.politic div:hover::after{
+    opacity:1
+}
+
+.red{
+    background-color: var(--red);
+}
+
+.red::after{
+    content: 'Authoritarian Left ';
+}
+
+.green{
+    background-color: var(--green);
+}
+
+.green::after{
+    content: 'Libertarian Left';
+}
+
+.blue{
+    background-color: var(--blue);
+}
+
+.blue::after{
+    content: 'Authoritarian Right ';
+}
+
+.purple{
+    background-color: var(--purple);
+}
+
+.purple::after{
+    content: 'Libertarian Right';
+}
+
+.grey{
+    background-color: var(--grey);
+}
+
+.grey::after{
+    content: 'Centrist';
+}
+
+/* @media only screen and (min-width:700px){
+    .politic div::after{
+    }
+} */

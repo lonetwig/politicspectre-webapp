@@ -1,0 +1,99 @@
+.full{
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 30px;
+    /* min-height: 420px; */
+    border: 2px solid var(--grey);
+    z-index: 10;
+    margin: 0px 25px 25px 25px;
+}
+
+.left h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color:var(--red);
+    max-width: 500px;
+}
+
+.left h2{
+    font-size: 2rem;
+    font-weight: 400;
+    max-width: 300px;
+    color: var(--red);
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.buttons button{
+    background: white;
+    border: 2px solid var(--red);
+    border-radius: 100px;
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: var(--red);
+    cursor:pointer;
+    transition: .1s;
+}
+
+.buttons button:hover{
+    background-color: var(--red);
+    color: white;
+}
+
+.kofi{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.kofi div{
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 200px;
+    opacity: 0;
+    padding: 20px;
+    transition: .2s;
+}
+
+.kofi div:hover{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:750px){
+    .full{
+        flex-direction: row;
+        margin: 80px 50px 25px 50px;
+}
+    .right{
+        margin-left: 50px;
+        margin-top: 0px;
+    }
+    .left h1{
+        font-size: 4rem;
+    }
+    .buttons button{
+        width: 320px;
+        padding: 20px 0px;
+        font-size: 3rem;
+    }
+}

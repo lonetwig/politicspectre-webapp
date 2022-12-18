@@ -1,0 +1,231 @@
+.full{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    overflow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--grey);
+    position: static;
+    position: relative;
+    z-index: 1000;
+}
+
+.profileImg{
+    height: 55vw;
+    width: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+}
+
+.profileImg img{
+    height: 90%;
+    border: 6px solid white;
+}
+
+.bio{
+    width: 55vw;
+    padding: 6px;
+    word-wrap: break-all;
+    border: 2px solid;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    min-width: 300px;
+    margin-top: 6px;
+}
+
+.full h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.full h4{
+    margin-top: 6px;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.admin,.ban{
+    display: flex;
+    justify-content: space-between;
+}
+
+.full button{
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 4px;
+    border-radius: 4px;
+    transition: .1s;
+    opacity: 1;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.admin button{
+    width: 32%;
+    align-items: center;
+    cursor: pointer;
+}
+
+.watcherOn,.stageOn,.adminOn{
+    background-color: var(--purple);
+    color: white;
+    border: none;
+}
+
+.watcherOff,.stageOff,.adminOff{
+    background-color: white;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+}
+
+.banOn,.kickOn{
+    background-color: var(--red);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.banOff,.kickOff{
+    background-color: white;
+    color: var(--red);
+    border: 2px solid var(--red);
+    cursor: pointer;
+}
+
+
+.ban button{
+    width: 49%;
+}
+
+.confirmOn,.confirmOff{
+    width: 100%;
+    color: white;
+    border: none;
+}
+
+.confirmOn{
+    background-color:hsl(40, 90%, 60%);
+    cursor: pointer;
+}
+
+.confirmOff{
+    background-color:hsl(0, 0%, 80%);
+}
+
+.watcherOff:hover,.stageOff:hover,.adminOff:hover{
+    background-color: hsl(264, 60%, 95%);
+}
+
+.watcherOff:active,.stageOff:active,.adminOff:active{
+    background-color: hsl(264, 50%, 90%);
+}
+
+.banOff:hover,.kickOff:hover{
+    background-color: hsl(0, 60%, 95%);
+}
+
+.banOff:active,.kickOff:active{
+    background-color: hsl(0, 50%, 90%);
+}
+
+.confirmOn:hover{
+    opacity: .8;
+}
+
+.confirmOn:active{
+    opacity: .7;
+}
+
+.mask{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.heart{
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--red);
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    background-color: white;
+    padding: 4px 10px;
+}
+
+.heart h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-left: 4px;
+}
+
+
+.confirm{
+    padding: 20px;
+    background: white;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.confirm div{
+    width: 300px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 14px;
+}
+
+.confirm button{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--red);
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    opacity: 1;
+    transition: .1s;
+}
+
+.confirm button:hover{
+    opacity: .8;
+}
+
+.confirm button:active{
+    opacity: .7;
+}
+
+@media only screen and (min-width:700px){
+    .profileImg{
+        height: 55vh;
+        width: 55vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bio{
+        width: 55vh;
+    }    
+}

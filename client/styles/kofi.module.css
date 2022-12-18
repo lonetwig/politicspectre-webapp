@@ -1,0 +1,43 @@
+.full{
+    display: none;
+    position: fixed;
+    z-index: 1000000;
+    bottom: 1vw;
+    right: 1vw;
+}
+
+.kofi{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    padding: .6vw;
+    border: 2px solid var(--grey);
+    border-radius: 15px;
+    background-color: white;
+}
+
+.kofi div{
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 200px;
+    opacity: 0;
+    padding: 20px;
+    transition: .2s;
+}
+
+.kofi img{
+    height: 4vw;
+    width: 11vw;
+}
+
+.kofi div:hover{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:1300px){
+    .full{
+        display: inline-block;
+    }
+}

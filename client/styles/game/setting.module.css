@@ -1,0 +1,191 @@
+.full{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    overflow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--grey);
+    position: static;
+    z-index: 1000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container div{
+    border-radius: 100px;
+    height: 40px;
+}
+
+.mask{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.maxSize,.privacy{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+.sub,.add{
+    width: 40px;
+}
+
+.sub,.add,.num{
+    color: var(--lightPurple);
+}
+
+
+.privacy div{
+    width:100px;
+}
+
+.unlOn,.unlOff{
+    margin: 0px 10px;
+}
+
+.sub,.add,.num,.privacy div{
+    border: 2px solid var(--purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.num{
+    width: 220px;
+    margin: 0px 10px;
+    cursor: default;
+}
+
+.pbOn,.prvOn,.unlOn{
+    background-color: var(--purple);
+    color: white;
+}
+
+.pbOff,.prvOff,.unlOff{
+    background-color: white;
+    color: var(--purple);
+}
+
+.sub:hover,.add:hover,.pbOff:hover,.prvOff:hover,.unlOff:hover{
+    background:hsl(264, 60%, 95%);
+}
+
+.sub:active,.add:active,.pbOff:active,.prvOff:active,.unlOff:active{
+    background:hsl(264, 50%, 90%);
+}
+
+.container h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 10px 0px;
+    color: var(--purple);
+}
+
+.full button{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    width: 100%;
+    padding: 4px;
+    border: none;
+    border-radius: 4px;
+    transition: .1s;
+    opacity: 1;
+    margin-top: 8px;
+}
+
+.update:hover,.delete:hover{
+    opacity: .8;
+}
+
+.update:hover,.delete:active{
+    opacity: .7;
+}
+
+.updateOff{
+    background-color: hsl(0, 0%, 80%);
+}
+
+.update{
+    background-color: hsl(40, 90%, 60%);
+    cursor: pointer;
+}
+
+.delete{
+    background-color: var(--red);
+    cursor: pointer;
+}
+
+
+.confirm{
+    padding: 20px;
+    background: white;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.confirm div{
+    width: 300px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--red);
+    margin-bottom: 14px;
+}
+
+.confirm button{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    background-color: var(--red);
+    border: none;
+    border-radius: 4px;
+    padding: 4px;
+    cursor: pointer;
+    opacity: 1;
+    transition: .1s;
+}
+
+.confirm button:hover{
+    opacity: .8;
+}
+
+.confirm button:active{
+    opacity: .7;
+}
+
+@media only screen and (min-width:700px){
+    .num{
+        width: 370px;
+        margin: 0px 10px;
+        cursor: default;
+    }
+    
+    .privacy div{
+        width:150px;
+    }
+    .container{
+        padding: 20px;
+    }
+}

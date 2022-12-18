@@ -1,0 +1,32 @@
+.rooms{
+    overflow-y: scroll;
+    height: 480px;
+    border: 2px solid var(--purple);
+}
+
+.add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    cursor: pointer;
+}
+
+.add h1{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--purple);
+    transition: .1s;
+    user-select: none;
+}
+
+.add h1:hover{
+    opacity: .8;
+}
+
+@media only screen and (min-width:700px){
+    .add h1{
+        font-size: 3rem;
+        border-radius: 15px;
+    }
+}

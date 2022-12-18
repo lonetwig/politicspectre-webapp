@@ -1,0 +1,29 @@
+.full{
+    position: relative;
+    overflow: hidden;
+    height: 1000vh;
+    width: 100vw;
+    opacity: .4;
+    background-color: var(--color);
+}
+
+.grid{
+    width: 130vw;
+    height: 1000vh;
+    background-image: url("../../public/square.png");
+    background-repeat: repeat;
+    position: absolute;
+    animation: moving 1.5s linear infinite ;
+    z-index: 0;
+}
+
+@keyframes moving {
+    0%{
+        top: -80px;
+        left: -80px;
+    }
+    100%{
+        top:0;
+        left:0
+    }
+}

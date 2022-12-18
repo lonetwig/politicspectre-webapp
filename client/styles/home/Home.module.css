@@ -1,0 +1,21 @@
+.main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    padding-top: 80px;
+}
+
+.grid{
+    position: absolute;
+    z-index: 0;
+}
+
+@media only screen and (min-width:800px){
+    .main{
+        padding-top: 0px;
+    }
+}

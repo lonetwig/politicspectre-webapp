@@ -1,0 +1,115 @@
+.all{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball{
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    margin:0px 4px;
+    transition: .1s;
+}
+
+.red{
+    background-color: var(--red);
+    animation: ared 2s cubic-bezier(0,.75,0,1.66) infinite;
+}
+
+.blue{
+    background-color: var(--blue);
+    animation: ablue 2s cubic-bezier(0,.75,0,1.66) infinite;
+}
+
+.green{
+    background-color: var(--green);
+    animation: agreen 2s cubic-bezier(0,.75,0,1.66) infinite;
+}
+
+.purple{
+    background-color: var(--purple);
+    animation: apurple 2s cubic-bezier(0,.75,0,1.66) infinite;
+}
+
+@keyframes ared {
+    0%{
+        margin-bottom:0px;
+    }
+    20%{
+        margin-bottom:40px;
+    }
+    25%{
+        margin-bottom:40px;
+    }
+    40%{
+        margin-bottom:0px;
+    }
+    100%{
+        margin-bottom:0px;
+    }
+}
+
+@keyframes ablue {
+    0%{
+        margin-bottom:0px;
+    }
+    10%{
+        margin-bottom:0px;
+    }
+    30%{
+        margin-bottom:40px;
+    }
+    35%{
+        margin-bottom:40px;
+    }
+    50%{
+        margin-bottom:0px;
+    }
+    100%{
+        margin-bottom:0px;
+    }
+}
+
+@keyframes agreen {
+    0%{
+        margin-bottom:0px;
+    }
+    20%{
+        margin-bottom:0px;
+    }
+    40%{
+        margin-bottom:40px;
+    }
+    45%{
+        margin-bottom:40px;
+    }
+    60%{
+        margin-bottom:0px;
+    }
+    100%{
+        margin-bottom:0px;
+    }
+}
+
+@keyframes apurple {
+    0%{
+        margin-bottom:0px;
+    }
+    30%{
+        margin-bottom:0px;
+    }
+    50%{
+        margin-bottom:40px;
+    }
+    55%{
+        margin-bottom:40px;
+    }
+    70%{
+        margin-bottom:0px;
+    }
+    100%{
+        margin-bottom:0px;
+    }
+}

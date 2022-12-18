@@ -1,0 +1,148 @@
+.full{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    border-bottom: 2px solid var(--grey);
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 10000;
+    height: 60px;
+    border-right:2px solid hsl(0, 0%, 80%);
+}
+
+.logo{
+    display: none;
+}
+
+.full h1{
+    font-weight: 900;
+    color:var(--color);
+    cursor: pointer;
+}
+
+.search{
+    position: relative;
+    padding: 0px 25px 0px 0px;
+}
+
+.result{
+    width: calc(100% - 50px);
+    height: 400px;
+    background-color: white;
+    border: 2px solid var(--grey);
+    transform: translateY(36px);
+}
+
+.search input{
+    border: 0px solid var(--color);
+    border-bottom-width: 4px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    padding: 0px 20px 0px 40px;
+    font-size: 2rem;
+    color:var(--color);
+}
+
+.search>div{
+    position: absolute;
+    top: 3px;
+}
+
+.auths{
+    display: none;
+}
+
+.auths div{
+    padding: 18px 14px;
+    font-size: 2rem;
+    color: var(--color);
+    font-weight: 700;
+    cursor: pointer;
+    min-width: 120px;
+    text-align: center;
+}
+ 
+.auths div:hover{
+    opacity: .7;
+}
+
+.mobAuths{
+    display: inline-block;
+
+}
+
+.mobAuths button{
+    background-color: white;
+    border: none;
+    padding: 8px 0px; 
+    cursor: pointer;
+}
+
+/* menu--------------------------------------------------- */
+
+.menu{
+    width:100%;
+    position: fixed;
+    background-color: white;
+    top: 58px;
+    padding: 10px 15px;
+    z-index: 10000;
+    border-top: 2px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
+    display: inline-block;
+}
+
+.menu h1{
+    display: inline-block;
+    font-size: 3rem;
+    color:var(--color);
+}
+
+.menu div{
+    font-size: 2rem;
+    color:var(--color);
+    padding: 5px 10px;
+    border-top: 1px solid var(--color);
+}
+
+.menu .auths{
+    display: flex;
+    flex-direction: column;
+}
+
+/* responce--------------------------------------------------- */
+
+@media only screen and (min-width:1400px){
+    .auths{
+        display: flex;
+    }
+    .mobAuths{
+        display:none
+    }
+    .search{
+        width:500px;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:700px){
+    .search{
+        width:500px;
+        padding: 0px 25px;
+    }
+    .full h1{
+        font-size: 4rem;
+        display: inline-block;
+    }
+    .logo{
+        display: inline-block;
+    }
+    .menu h1{
+        display: none;
+    }
+}

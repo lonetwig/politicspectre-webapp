@@ -1,0 +1,121 @@
+.full{
+    width: 100%;
+    border-bottom: 1px solid var(--purple);
+    position: relative;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+    padding-right: 30px;
+    border-right: 2px solid var(--purple);
+}
+
+
+.img{
+    height: 100px;
+    width: 100px;
+}
+
+.full h1,.full h2{
+    font-size: 1.4rem;
+    color: var(--purple);
+}
+
+.full h1{
+    font-weight: 900;
+}
+
+.full h2{
+    font-weight: 400;
+}
+
+.full>div{
+    max-width: 170px;
+    max-height:170px;
+    overflow: hidden;
+    min-height: 60px;
+}
+
+.delete,.deleteBig{
+    position: absolute;
+    border: 2px solid var(--red);
+    border-radius: 8px;
+    z-index: 100;
+    transition: .1s;
+    padding: 2px;
+}
+
+.delete:hover,.deleteBig:hover{
+    background-color:hsl(0, 75%, 85%) ;
+}
+
+.deleteBig{
+    top: 14px;
+    right: 14px;
+    display: none;
+}
+
+.delete{
+    right: 6px;
+    top: 6px;
+    display: inline-block;
+}
+
+.heart{
+    position: absolute;
+    top: 0px;
+    transition: .1;
+}
+
+.heart:hover{
+    opacity: 0.1;
+}
+
+.getRoom{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    background-color:var(--purple) ;
+    opacity: 0;
+    transition: .1s;
+}
+
+.getRoom:hover{
+    opacity: .15;
+}
+
+@media only screen and (min-width:700px){
+    .imgInp,.img{
+        height: 140px;
+        width: 140px;
+    }
+
+    .full h1,.full h2{
+        font-size: 2rem;
+        color: var(--purple);
+    }
+    .full{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;    
+        padding-right: 60px;
+    }
+    .delete{
+        display: none;
+    }
+    .deleteBig{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width:700px){
+    .full{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width:900px){
+    .full{
+        padding-right: 120px;
+    }
+}

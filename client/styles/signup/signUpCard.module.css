@@ -1,0 +1,143 @@
+.full{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 600px;
+    border: 2px solid var(--grey);
+    position: relative;
+    z-index: 10;
+    width: 750px;
+}
+
+.full h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--blue);
+}
+ .full h2,.full label{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.full label{
+    cursor: pointer;
+    user-select: none;
+}
+
+ .info{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 20px 0px;
+    width: 100%;
+ }
+
+ .image{
+    height: 260px;
+    width: 260px;
+ }
+
+.left,.right{
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    width: 100%;
+    padding: 0;
+}
+
+.right>div{
+    display: flex;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.left{
+    margin-right: 0px;
+    position: relative;
+}
+
+.info input{
+    border: 2px solid var(--blue);
+    height: 46px;
+    padding: 0px 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--blue);
+    margin: 8px 0px 15px 0px;
+}
+
+.info input::placeholder{
+    color:hsl(210, 60%, 80%);
+}
+
+.right input{
+    display: none;
+}
+
+.left input{
+    border-radius: 300px;
+}
+
+.image input{
+    display: none;
+}
+
+.button{
+    display: flex;
+}
+
+.button button{
+    padding: 12px 20px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    background-color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.button button:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.error{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color:hsl(0, 30%, 85%) ;
+    color: hsl(0, 80%, 35%);
+    border: 2px solid hsl(0, 80%, 35%);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: -40px;
+}
+
+@media only screen and (min-width:750px){
+    .info{
+        flex-direction: row;
+    }
+    .right{
+        width: 300px;
+    }
+    .left{
+        margin-right: 50px;
+    }
+    .info input{
+        width: 360px;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .full{
+        width: 100%;
+    }
+
+}
+

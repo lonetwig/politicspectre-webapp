@@ -1,0 +1,93 @@
+.full{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100vh;
+    background-color: rgba(0,0,0,.5);
+    overflow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 20px;
+    background-color: white;
+    border: 1px solid var(--grey);
+    position: static;
+    z-index: 1000;
+    border-radius: 10px;
+}
+
+.bans{
+    height: 400px;
+    border: 1px solid var(--grey);
+    overflow-y: scroll;
+    width: 500px;
+}
+
+.profileImg{
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileImg img{
+    height: 80%;
+    width: 80%;
+    border: 3px solid white;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    padding-right: 10px;
+}
+
+.user h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.user h4{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.user button{
+    background-color: var(--red);
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.user button:hover{
+    opacity: .8;
+}
+
+.user button:active{
+    opacity: .7;
+}
+
+.mask{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media only screen and (min-width:700px){
+
+}

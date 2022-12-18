@@ -1,0 +1,45 @@
+.full{
+    position: relative;
+    z-index: 10;
+    width: 1000px;
+}
+
+.section{
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 2px solid var(--grey);
+    border-top-color: white;
+    min-height: 530px;
+}
+
+.options{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    user-select: none;
+    cursor: pointer;
+}
+
+.options div{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--grey);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.options h1{
+    font-size: 2rem;
+    color:var(--purple);
+    font-weight: 900;
+    padding: 4px;
+}
+
+@media only screen and (min-width:700px){
+    .options h1{
+        font-size: 3rem;
+    }
+}

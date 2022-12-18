@@ -1,0 +1,99 @@
+.full{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    min-height: 420px;
+    max-width: 800px;
+    border: 2px solid var(--grey);
+    position: relative;
+    z-index: 10;
+}
+
+.full h1{
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--blue);
+}
+ .full h2,.full label{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.full label{
+    cursor: pointer;
+    user-select: none;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0px 30px 0px;
+    width: 100%;
+    position: relative;
+ }
+
+ .info input{
+    border: 2px solid var(--blue);
+    border-radius: 100px;
+    height: 46px;
+    padding: 0px 20px;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--blue);
+    margin: 8px 0px 15px 0px;
+    width: 100%;
+}
+
+.info input::placeholder{
+    color:hsl(210, 60%, 80%);
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button button{
+    padding: 12px 20px;
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    background-color: white;
+    font-size: 2rem;
+    font-weight: 900;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.button button:hover{
+    background-color: var(--blue);
+    color: white;
+}
+
+.error{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    background-color:hsl(0, 30%, 85%) ;
+    color: hsl(0, 80%, 35%);
+    border: 2px solid hsl(0, 80%, 35%);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 8px;
+}
+
+@media only screen and (min-width:750px){
+
+    .info input{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .full{
+        width: 100%;
+    }
+}

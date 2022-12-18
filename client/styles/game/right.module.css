@@ -1,0 +1,190 @@
+.full{
+    min-height:500px ;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.full h1{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.fullUsers,.fullChat{
+    height: 300px;
+    padding: 10px;
+}
+
+/* users--------------------------------------------------- */
+
+.fullUsers{
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+
+.fullChat{
+    margin-top: 16px;
+    border: 2px solid var(--purple);
+    color: var(--purple);
+}
+
+.users{
+    padding: 10px;
+    height: calc(100% - 44px);
+    overflow-y: scroll;
+    border: 1px solid var(--blue);
+}
+
+
+.users h2{
+    font-size: 1.4rem;
+    margin-top: 6px;
+}
+
+.stage,.admins,.watchers{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--grey);
+    padding: 6px 0px;
+}
+
+/* chat--------------------------------------------------- */
+
+.chat{
+    padding: 10px;
+    height: calc(100% - 84px);
+    overflow-y: scroll;
+    border: 1px solid var(--purple);
+    margin-bottom: 10px;
+    user-select: text;
+}
+
+.typer{
+    height: 30px;
+    display: flex;
+}
+.typer input{
+    height: 100%;
+    width: 80%;
+    font-size: 1.4rem;
+    padding: 0px 6px;
+    outline: none;
+    color: grey;
+}
+
+.typer button{
+    background-color: var(--purple);
+    height: 100%;
+    width: 20%;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    transition: .1s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.typer button:hover{
+    opacity: .9;
+}
+
+.typer button:active{
+    opacity: .8;
+}
+
+.message{
+    border-bottom: 1px solid var(--grey);
+    line-height: 20px;
+    padding: 8px 0px;
+}
+
+.message .text h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 4px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.message .text{
+    width: 80%;
+}
+
+.profileImg{
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profileImg img,.admin img{
+    height: 85%;
+    width: 85%;
+    border: 2px solid white;
+}
+
+.admin{
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+
+.admin {
+    margin: 2px 4px;
+}
+
+.admin span{
+    position: absolute;
+    padding: 4px;
+    background-color: grey;
+    color: lightgray;
+    border: 1px solid lightgray;
+    opacity: 0;
+    transition: .1s;
+    top: -30px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.message p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-left: 6px;
+    word-wrap: break-word;
+}
+
+.more{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--lightPurple);
+    cursor: pointer;
+    opacity: 1;
+    margin: 4px 0px 14px 0px;
+}
+
+.more:hover{
+    opacity: .8;
+}
+
+@media only screen and (min-width:1400px){
+    .full{
+        min-height:100vh ;
+    }
+    .fullChat{
+        height:40vh;
+    }
+    .fullUsers{
+        height:40vh;
+    }   
+    .full{
+        padding: 80px 20px 20px 20px;
+    } 
+}
